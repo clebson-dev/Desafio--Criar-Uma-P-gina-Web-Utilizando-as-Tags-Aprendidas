@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial de HTML</title>
+</head>
+<body>
+    <h1 id="inicio">Tags HTML</h1>
+    <hr>
+    
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#paragrafo">Tag p</a></li>
+        <li><a href="#imagem">Tag img</a></li>
+        <li><a href="#link">Tag a</a></li>
+        <li><a href="#lista">Tags ul e li</a></li>
+        <li><a href="#tabela">Tag table</a></li>
+        <li><a href="#formulario">Tag form</a></li>
+    </ul>
+
+    <h2 id="paragrafo">Tag p</h2>
+    <p>A tag p é usada para criar parágrafos de texto. Ela é uma tag de conteúdo, ou seja, ela pode conter texto e outras tags dentro dela. Por exemplo:</p>
+    <p>Este é um <strong>parágrafo</strong> com uma tag <em>strong</em> e uma tag <em>em</em>.</p>
+    
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <h2 id="imagem">Tag img</h2>
+    <p>A tag img é usada para inserir imagens na página. Ela é uma tag vazia, ou seja, ela não tem conteúdo nem fecha com uma barra (/). Ela tem dois atributos obrigatórios: src e alt. O atributo src indica o endereço da imagem, que pode ser uma URL ou um caminho relativo. O atributo alt indica um texto alternativo que será exibido caso a imagem não possa ser carregada. Por exemplo:</p>
+    <img src="logo.png" alt="Logo da empresa">
+    <p>Esta é a imagem do logo da empresa.</p>
+
+    <small><a href="#inicio">(Voltar)</a></small>
+    
+    <h2 id="link">Tag a</h2>
+    <p>A tag a é usada para criar links na página. Ela é uma tag de conteúdo, ou seja, ela pode conter texto e outras tags dentro dela. Ela tem um atributo obrigatório: href. O atributo href indica o endereço do link, que pode ser uma URL ou um caminho relativo. Por exemplo:</p>
+    <a href="https://www.bing.com">Este é um link para o Bing</a>
+    <p>Este é um link para o Bing.</p>
+
+    <small><a href="#inicio">(Voltar)</a></small>    
+   
+    <h2 id="lista">Tags ul e li</h2>
+    <p>As tags ul e li são usadas para criar listas não ordenadas na página. A tag ul é a tag que contém a lista, e a tag li é a tag que contém cada item da lista. As tags ul e li são tags de conteúdo, ou seja, elas podem conter texto e outras tags dentro delas. Por exemplo:</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <p>Esta é uma lista não ordenada com três itens.</p>
+
+    <small><a href="#inicio">(Voltar)</a></small>
+        
+    <h2 id="tabela">Tag table</h2>
+    <p>A tag table é usada para criar tabelas na página. Ela é uma tag de conteúdo, ou seja, ela pode conter texto e outras tags dentro dela. A tag table é composta por outras tags que definem a estrutura da tabela, como thead, tbody, tr, th e td. A tag thead indica o cabeçalho da tabela, a tag tbody indica o corpo da tabela, a tag tr indica uma linha da tabela, a tag th indica uma célula de cabeçalho da tabela, e a tag td indica uma célula de dados da tabela. Por exemplo:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>25</td>
+                <td>Engenheira</td>
+            </tr>
+            <tr>
+                <td>Bruno</td>
+                <td>32</td>
+                <td>Médico</td>
+            </tr>
+            <tr>
+                <td>Carla</td>
+                <td>28</td>
+                <td>Professora</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Esta é uma tabela com três linhas e três colunas.</p>
+
+    <small><a href="#inicio">(Voltar)</a></small>
+        
+    <h2 id="formulario">Tag form</h2>
+    <p>A tag form é usada para criar formulários na página. Ela é uma tag de conteúdo, ou seja, ela pode conter texto e outras tags dentro dela. A tag form tem dois atributos importantes: action e method. O atributo action indica o endereço para onde os dados do formulário serão enviados, e o atributo method indica o método de envio dos dados, que pode ser GET ou POST. Dentro da tag form, podemos usar outras tags para criar os campos do formulário, como input, label, select, option, textarea e button. Por exemplo:</p>
+    <form action="enviar.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="assunto">Assunto:</label>
+        <select id="assunto" name="assunto">
+            <option value="Dúvida">Dúvida</option>
+            <option value="Sugestão">Sugestão</option>
+            <option value="Reclamação">Reclamação</option>
+        </select>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <p>Este é um formulário com cinco campos e um botão.</p>
+
+    <small><a href="#inicio">(Voltar)</a></small>
+</body>
+</html>
